@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>DivyaKumar's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="leftNav">
+            <span class="blue">&lt;</span>DivyaKumar<span class="blue">/&gt;</span>
+        </div>
+        <div class="rightNav">
+            <ul class="navLinks">
+                <!-- close nav -->
+                <div class="closeNav">
+                    <i class="bi bi-x"></i>
+                </div>
+                <!-- list -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+
+            <!-- List mode -->
+            <div class="toggleNav">
+                <i class="bi bi-list"></i>
+            </div>
+            
+
+            <!-- dark mode -->
+            <div class="darkMode">
+                <i class="bi bi-sun-fill active"></i>
+                <i class="bi bi-moon-fill"></i>
+            </div>
+            
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="homeSection">
+                <div class="leftSide">
+                    Hi, My name is <span class="blue">Divya</span>
+                    <div>and I am a passionate</div>
+                    <span id="element" class="blue"></span>
+                </div>
+                <div class="rightSide">
+                    <img src="/images/myImage.png" alt="myImage">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project">
+
+            <div class="projectSection">
+                <p>Projects</p>
+            
+
+                <div class="projectBox card">
+                    <div class="projectTextRight">
+                        <h3 class="blue">Word Counter</h3>
+                    
+                        <div>
+                            Word Counter is a web application that allows you to count the number of words, characters,
+                            sentences and paragraphs in any text. You can enter the text get the results in one click. The
+                            application is built using HTML, CSS and Flask, a lightweight web framework for Python.
+                        </div>
+                    </div>
+
+                    <div class="projectLine"><span></span></div>
+
+                    <div class="projectTextLeft">
+                        January 2023
+                    </div>
+                </div>
+
+                <div class="projectBox">
+                    <div class="projectTextRight">
+                        July 2022 - June 2023
+                    </div>
+                    <div class="projectLine"></div>
+                    <div class="projectTextLeft">
+                        <h3 class="blue">E-Pass Management System</h3>
+                    
+                        <div>E-Pass Management System is a web application that allows you to apply for and manage e-passes
+                            for travel in city bus. You can fill an online form with your personal details and submit it for
+                            approval. You can also check the status of your application The application is built using HTML,
+                            CSS and Flask.This project is made by me and my collegues for Design Engineering subject. <span
+                                class="grey"> Not Completed yet</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="skillSection">
+                <p>Skills</p>
+
+                <div class="flex-wrapper">
+
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart green">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">60%</text>
+                        </svg>
+                        <div>HTML</div>
+                    </div>
+    
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart purpleCircle">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">50%</text>
+                        </svg>
+                        <div>CSS</div>
+                    </div>
+    
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="45, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">45%</text>
+                        </svg>
+                        <div>JavaScript</div>
+                    </div>
+    
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart blue">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">80%</text>
+                        </svg>
+                        <div>C</div>
+                    </div>
+    
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart red">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="65, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">65%</text>
+                        </svg>
+                        <div>JAVA</div>
+                    </div>
+    
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">50%</text>
+                        </svg>
+                        <div>Python</div>
+                    </div>
+    
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart purpleCircle">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">50%</text>
+                        </svg>
+                        <div>Flask</div>
+                    </div>
+    
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart green">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">75%</text>
+                        </svg>
+                        <div>Video Editing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-me">
+            <div class="aboutSection">
+                <p>About Me</p>
+
+                <div class="aboutBox">
+                    <div class="about-text">
+                        Hello, I'm a computer engineering student in 2nd year at L. D. College of Engineering. I have
+                        experience in working with various programming languages and technologies such as HTML, CSS, Flask, Java,
+                        Python, SQL, etc. I have also completed several mini projects and participated in hackathon. Some of my
+                        projects include a word counter web application. You can check out my projects and skills in this website.
+                        <br><br>
+                        I'm always eager to learn new things and explore new challenges in the field of computer
+                        engineering. I'm also interested in collaborating with other developers. I believe that computer engineering is
+                        not only about writing code, but also about solving real-world problems and creating value for the
+                        users. I'm looking forward to applying my knowledge and skills in future projects and opportunities.
+                    </div>
+                    <div class="about-img">
+                        <img src="/images/bg.png" alt="Developer Image">    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-me">
+            <div class="contactSection">
+                <p>Contact Me</p>
+
+                <div class="contactItem">
+
+                    <div class="contactForm">
+                        <div>
+                            <!-- <label for="name">Name</label> -->
+                            <input type="text" name="name" id="name" placeholder="your name">
+                        </div>
+                        
+                        <div>
+                            <!-- <label for="mail">E-mail</label> -->
+                            <input type="email" name="mail" id="mail" placeholder="your mail">
+                        </div>
+                        
+                        <div>
+                            <!-- <label for="message">Message</label> -->
+                            <textarea name="message" id="message" cols="23" rows="5" placeholder="drop your message"></textarea>
+                            <!-- <input type="textarea" name="message" id="message" placeholder="your message" cols="15" rows="10"> -->
+                        </div>
+
+                        <div>
+                            <button class="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>-- or --</p>
+                    </div>
+
+                    <div class="contactBox">
+                        <div class="location">
+                            <a href="https://github.com/divyakumar31" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <div>
+                                <!-- <h4>GitHub</h4> -->
+                                <h4>divyakumar31</h4>
+                            </div>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:d.b.patel691@gmail.com">
+                                <!-- <span class="material-icons">
+                                    email
+                                </span> -->
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            <div>
+                                <!-- <h4>Mail</h4> -->
+                                <h4>d.b.patel691@gmail.com</h4>
+                            </div>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/divyakumar-patel-697726225" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <div>
+                                <!-- <h4>LinkedIn</h4> -->
+                                <h4>Divyakumar Patel</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="grey">
+        <!-- All right reserved |  -->
+        copyright &copy; 2023 Divya Patel
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer'], // 'Video Editor', 'Learner'
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
