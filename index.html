@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>DivyaKumar's Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+
+    <title>Divya's Portfolio</title>
 </head>
 <body>
     <nav>
         <div class="leftNav">
-            <span class="blue">&lt;</span>DivyaKumar<span class="blue">/&gt;</span>
+            <span class="blue">&lt;</span>DivyaPatel<span class="blue">/&gt;</span>
         </div>
         <div class="rightNav">
             <ul class="navLinks">
@@ -20,11 +27,11 @@
                     <i class="bi bi-x"></i>
                 </div>
                 <!-- list -->
-                <li><a href="#home">Home</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#project">PROJECT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
 
             <!-- List mode -->
@@ -47,15 +54,41 @@
         <section id="home">
             <div class="homeSection">
                 <div class="leftSide">
-                    Hi, My name is <span class="blue">Divya</span>
-                    <div>and I am a passionate</div>
-                    <span id="element" class="blue"></span>
+                    Hi👋, My name is <span class="blue">Divya</span>
+                    <div>and I am 
+                    <span id="element" class="blue"></span></div>
                 </div>
                 <div class="rightSide">
                     <img src="/images/myImage.png" alt="myImage">
                 </div>
             </div>
         </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="aboutSection">
+                <p>About</p>
+
+                <div class="aboutBox">
+                    <div class="about-text">
+                        Hello, I'm a computer engineering student in 2nd year at L. D. College of Engineering. I have
+                        experience in working with various programming languages and technologies such as HTML, CSS, Flask, Java,
+                        Python, SQL, etc. I have also completed several mini projects and participated in hackathon. Some of my
+                        projects include a word counter web application. You can check out my projects and skills in this website.
+                        <br><br>
+                        I'm always eager to learn new things and explore new challenges in the field of computer
+                        engineering. I'm also interested in collaborating with other developers. I believe that computer engineering is
+                        not only about writing code, but also about solving real-world problems and creating value for the
+                        users. I'm looking forward to applying my knowledge and skills in future projects and opportunities.
+                    </div>
+                    <div class="about-img">
+                        <img src="/images/bg.png" alt="Developer Image">    
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Project Section -->
         <section id="project">
@@ -64,7 +97,7 @@
                 <p>Projects</p>
             
 
-                <div class="projectBox card">
+                <div class="projectBox">
                     <div class="projectTextRight">
                         <h3 class="blue">Word Counter</h3>
                     
@@ -99,10 +132,27 @@
                     </div>
                 </div>
 
+                <div class="projectBox">
+                    <div class="projectTextRight">
+                        <h3 class="blue">Word Counter</h3>
+                    
+                        <div>
+                            Word Counter is a web application that allows you to count the number of words, characters,
+                            sentences and paragraphs in any text. You can enter the text get the results in one click. The
+                            application is built using HTML, CSS and Flask, a lightweight web framework for Python.
+                        </div>
+                    </div>
 
+                    <div class="projectLine"><span></span></div>
+
+                    <div class="projectTextLeft">
+                        January 2023
+                    </div>
+                </div>
 
             </div>
         </section>
+
 
         <!-- Skills Section -->
         <section id="skills">
@@ -218,51 +268,28 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about-me">
-            <div class="aboutSection">
-                <p>About Me</p>
-
-                <div class="aboutBox">
-                    <div class="about-text">
-                        Hello, I'm a computer engineering student in 2nd year at L. D. College of Engineering. I have
-                        experience in working with various programming languages and technologies such as HTML, CSS, Flask, Java,
-                        Python, SQL, etc. I have also completed several mini projects and participated in hackathon. Some of my
-                        projects include a word counter web application. You can check out my projects and skills in this website.
-                        <br><br>
-                        I'm always eager to learn new things and explore new challenges in the field of computer
-                        engineering. I'm also interested in collaborating with other developers. I believe that computer engineering is
-                        not only about writing code, but also about solving real-world problems and creating value for the
-                        users. I'm looking forward to applying my knowledge and skills in future projects and opportunities.
-                    </div>
-                    <div class="about-img">
-                        <img src="/images/bg.png" alt="Developer Image">    
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
         <!-- Contact Section -->
-        <section id="contact-me">
+        <section id="contact">
             <div class="contactSection">
-                <p>Contact Me</p>
+                <p>Contact</p>
 
                 <div class="contactItem">
 
                     <div class="contactForm">
                         <div>
                             <!-- <label for="name">Name</label> -->
-                            <input type="text" name="name" id="name" placeholder="your name">
+                            <input type="text" name="name" id="name" placeholder="your name" autocomplete="off">
                         </div>
                         
                         <div>
                             <!-- <label for="mail">E-mail</label> -->
-                            <input type="email" name="mail" id="mail" placeholder="your mail">
+                            <input type="email" name="mail" id="mail" placeholder="your mail" autocomplete="off">
                         </div>
                         
                         <div>
                             <!-- <label for="message">Message</label> -->
-                            <textarea name="message" id="message" cols="23" rows="5" placeholder="drop your message"></textarea>
+                            <textarea name="message" id="message" cols="23" rows="5" placeholder="drop your message" autocomplete="off"></textarea>
                             <!-- <input type="textarea" name="message" id="message" placeholder="your message" cols="15" rows="10"> -->
                         </div>
 
@@ -284,7 +311,7 @@
                             </a>
                             <div>
                                 <!-- <h4>GitHub</h4> -->
-                                <h4>divyakumar31</h4>
+                                <p>divyakumar31</p>
                             </div>
                         </div>
                         <div class="mail">
@@ -296,7 +323,7 @@
                             </a>
                             <div>
                                 <!-- <h4>Mail</h4> -->
-                                <h4>d.b.patel691@gmail.com</h4>
+                                <p>d.b.patel691@gmail.com</p>
                             </div>
                         </div>
                         <div class="linkedin">
@@ -305,7 +332,7 @@
                             </a>
                             <div>
                                 <!-- <h4>LinkedIn</h4> -->
-                                <h4>Divyakumar Patel</h4>
+                                <p>Divyakumar Patel</p>
                             </div>
                         </div>
 
@@ -328,7 +355,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['web developer'], // 'Video Editor', 'Learner'
+            strings: ['a student'], // 'exploring new fields', 'web developer', 'Video Editor', 'Learner'
             typeSpeed: 50,
         });
     </script>

@@ -13,7 +13,7 @@ closeMenu.addEventListener('click', ()=> {
 })
 
 submitAlert.addEventListener('click', ()=> {
-    alert("Sorry, Can't submit your message.")
+    alert("Sorry, Can't send your message. 🙂")
 })
 
 darkMode.addEventListener('click', ()=> {
