@@ -39,6 +39,7 @@ body {
     height: 100%;
     color: var(--font-color);
     background-color: var(--main-color);
+    min-width: fit-content;
 }
 
 nav {
@@ -120,12 +121,6 @@ nav {
     font-weight: 600;
     font-size: 3.5vmax;
     color: var(--heading-color);
-}
-
-
-.aboutSection,
-.projectSection {
-    min-height: 100vh;
 }
 
 
@@ -319,6 +314,7 @@ textarea:focus {
 }
 
 .submit {
+    font-size: 1em;
     color: var(--nav-color);
     background-color: var(--menu-color);
     border-radius: 5px;
@@ -344,13 +340,13 @@ textarea:focus {
 .location div,
 .mail div,
 .linkedin div {
-    font-size: 2vh;
+    font-size: 1em;
 }
 
 .location i,
 .mail i,
 .linkedin i {
-    font-size: 4vh;
+    font-size: 2em;
 }
 
 
@@ -419,7 +415,7 @@ button:hover {
         position: fixed;
         top: -15px;
         right: -15px;
-        width: 30vw;
+        width: 40vw;
         height: 110vh;
         flex-direction: column;
         gap: 2vh;
@@ -427,6 +423,7 @@ button:hover {
         padding: var(--all-padding);
         padding-top: 30px;
         background-color: var(--menu-color);
+        z-index: 55;
     }
     
     .navLinks li {
@@ -438,7 +435,7 @@ button:hover {
      
     .navLinks .closeNav {
         position: absolute;
-        right: 3vw;
+        right: 7vw;
         top: 3vh;
         font-size: 1.5em;
     }
