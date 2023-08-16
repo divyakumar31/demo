@@ -305,6 +305,7 @@ nav {
     border-radius: 5px;
     resize: none;
     font-size: 1em;
+    color: var(--font-color);
 }
 
 input:focus,
