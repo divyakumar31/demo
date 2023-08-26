@@ -21,3 +21,11 @@ darkMode.addEventListener('click', ()=> {
     darkMode.querySelector('i:nth-child(1)').classList.toggle('active');
     darkMode.querySelector('i:nth-child(2)').classList.toggle('active');
 });
+
+const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+if (prefersColorScheme.matches) {
+    document.body.classList.toggle('dark-theme-colors');
+    darkMode.querySelector('i:nth-child(1)').classList.toggle('active');
+    darkMode.querySelector('i:nth-child(2)').classList.toggle('active');
+} 
