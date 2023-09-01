@@ -11,6 +11,7 @@
     --circle-stock-color: rgb(229, 243, 255);
     --menu-color: rgb(218, 224, 249);
     --nav-color: black;
+    --form-font: black;
 }
 
 .dark-theme-colors {
@@ -21,6 +22,7 @@
     --menu-color: rgb(218, 224, 249);
     --circle-stock-color: rgba(56, 56, 56, 0.291);
     /* --nav-color: black; */
+    --form-font: white;
 }
 
 * {
@@ -113,7 +115,7 @@ nav {
 
 /* Home Section */
 .homeSection {
-    height: calc(100vh - 10vh);
+    height: calc(100dvh - 10vh);
     padding: var(--all-padding);
     display: flex;
     justify-content: space-between;
@@ -199,6 +201,10 @@ nav {
 .single-chart div {
     /* font-size: 1.5vmax; */
     font-size: 1.2em;
+}
+
+.flask-logo > path{
+    fill: var(--form-font);
 }
 
 .circular-chart {
@@ -305,12 +311,13 @@ nav {
     border-radius: 5px;
     resize: none;
     font-size: 1em;
-    color: var(--font-color);
+    color: black;
 }
 
 input:focus,
 textarea:focus {
     background-color: transparent;
+    color: var(--form-font);
     border: 1px solid var(--heighlight-color);
 }
 
