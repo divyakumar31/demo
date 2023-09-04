@@ -30,32 +30,6 @@
     --project-layer-color: rgba(102, 148, 254, 0.551);
     --project-layer-font-color: black;
 }
-/* 
-root
---main-color: aliceblue; --body-bg-color
---heading-size: 3vmax;
---heighlight-color: blue; --logo-color
---heading-color: black; --heading-font-color
---all-padding: 0 5vw;
---heading-padding: 4vh;
---font-color: black;  --body-font-color
---circle-stock-color: rgb(229, 243, 255);
---menu-color: rgb(218, 224, 249);
---nav-color: black;
---form-font: black;
-
-
-dark
---main-color: rgb(0, 0, 33);
---heighlight-color: rgb(142, 46, 232);
---heading-color: white;
---font-color: rgba(218, 217, 217, 0.85);
---menu-color: rgb(218, 224, 249);
---circle-stock-color: rgba(56, 56, 56, 0.291);
---form-font: white;
-*/
-
-
 
 * {
     margin: 0;
