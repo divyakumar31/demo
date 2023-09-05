@@ -7,7 +7,7 @@
     --logo-color: blue;
     --heading-font-color: black;
     --menu-bg-color: rgb(218, 224, 249);
-    --box-shadow-color: rgba(0,0,0,0.2);
+    --box-shadow-color: rgba(0, 0, 0, 0.435);
     --project-layer-color: rgba(102, 148, 254, 0.551);
     --project-layer-font-color: white;
 
@@ -26,7 +26,7 @@
     --body-font-color: rgba(218, 217, 217, 0.85);
     --logo-color: rgb(142, 46, 232);
     --heading-font-color: white;
-    --box-shadow-color: rgba(255,255,255,0.2);
+    --box-shadow-color: rgba(239, 229, 229, 0.76);
     --project-layer-color: rgba(102, 148, 254, 0.551);
     --project-layer-font-color: black;
 }
@@ -59,7 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 10vh; */
+    height: 10vh;
     font-weight: 500;
 }
 
@@ -127,8 +127,7 @@ nav {
 /* ====== Home Section Starts ====== */
 
 .homeSection {
-    min-height: calc(100dvh - 10vh);
-    max-height: calc(100dvh - 10vh);
+    height: calc(100dvh - 10vh);
     padding: var(--body-padding);
     display: flex;
     justify-content: space-between;
@@ -140,16 +139,8 @@ nav {
 
 /* ====== About Section Starts ====== */
 
-.aboutSection {
-    padding: var(--body-padding);
-}
-
 .aboutSection h2 {
-    color: var(--heading-font-color);
-    font-size: var(--section-heading-size);
-    font-weight: 600;
-    padding: var(--section-heading-padding);
-    padding-left: 0px;
+    text-align: left;
 }
 
 .aboutBox {
@@ -175,19 +166,6 @@ nav {
 
 /* ====== Project Section ====== */
 
-.projectSection {
-    padding: var(--body-padding);
-}
-
-.projectSection h2 {
-    color: var(--heading-font-color);
-    font-size: var(--section-heading-size);
-    font-weight: 600;
-    padding: var(--section-heading-padding);
-    padding-left: 0px;
-    text-align: center;
-}
-
 .projectList {
     display: flex;
     gap: 3.5rem;
@@ -198,13 +176,9 @@ nav {
 }
 
 .projectBox {
-    box-shadow: 0 4px 8px 0 var(--box-shadow-color);
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    box-shadow: 0 2px 4px 0 var(--box-shadow-color);
     border-radius: 10px;
-    /* width: 380px; */
     width: 25vw;
-    /* min-width: 380px;
-    max-width: 380px; */
     display: flex;
     position: relative;
     overflow: hidden;
@@ -214,7 +188,6 @@ nav {
     display: none;
     transition: transform 0.5s;
     border-radius: 10px 10px 10px 10px;
-    /* border-radius: 10px 10px 0 0; */
     -webkit-user-drag: none;
 }
 
@@ -225,15 +198,12 @@ nav {
 .projectBox:hover {
     box-shadow: 0 8px 16px 0 var(--box-shadow-color);
     transition: all 0.5s ease;
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
 }
 
 .projectContainer {
-    /* padding: 2px 16px; */
     width: 100%;
     height: 0;
     background-color: var(--project-layer-color);
-    /* opacity: 0.7; */
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -243,6 +213,9 @@ nav {
     align-items: center;
     justify-content: center;
     transition: height 0.5s;
+}
+
+.projectContainer a {
     color: var(--project-layer-font-color);
 }
 
@@ -256,19 +229,6 @@ nav {
     cursor: pointer;
 }
 /* ====== Skills Section Starts ====== */
-
-.skillSection {
-    padding: var(--body-padding);
-}
-
-.skillSection h2 {
-    color: var(--heading-font-color);
-    font-size: var(--section-heading-size);
-    font-weight: 600;
-    padding: var(--section-heading-padding);
-    padding-left: 0px;
-    text-align: center;
-}
 
 .flex-wrapper {
     display: flex;
@@ -290,18 +250,6 @@ nav {
 }
 
 /* ====== Contact Section Starts ======*/
-.contactSection {
-    padding: var(--body-padding);
-}
-
-.contactSection h2 {
-    color: var(--heading-font-color);
-    font-size: var(--section-heading-size);
-    font-weight: 600;
-    padding: var(--section-heading-padding);
-    padding-left: 0px;
-    text-align: center;
-}
 
 .contactItem {
     display: flex;
@@ -378,8 +326,7 @@ textarea:focus {
 footer {
     text-align: center;
     user-select: none;
-    font-size: 2vh;
-    padding: var(--heading-padding);
+    padding: var(--body-padding);
 }
 
 
@@ -541,6 +488,7 @@ footer {
     .leftSide {
         width: 100%;
     }
+
     /* ====== Project Section ====== */
     .projectList {
         gap: 2rem;
@@ -549,6 +497,7 @@ footer {
     .projectBox {
         width: auto;
     }
+
     /* ====== Skill Section ====== */
     .flex-wrapper {
         justify-content: space-evenly;
@@ -562,7 +511,7 @@ footer {
 
 a {
     text-decoration: none;
-    color: var(--font-color);
+    color: var(--body-font-color);
 }
 
 .blue {
@@ -590,4 +539,17 @@ button {
 button:hover {
     color: var(--logo-color);
     transition: all 0.2s ease;
+}
+
+h2 {
+    color: var(--heading-font-color);
+    font-size: var(--section-heading-size);
+    font-weight: 600;
+    padding: var(--section-heading-padding);
+    padding-left: 0px;
+    text-align: center;
+}
+
+.section-div {
+    padding: var(--body-padding);
 }
