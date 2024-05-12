@@ -290,6 +290,7 @@ textarea:focus {
   background-color: transparent;
   color: var(--heading-font-color);
   border: 1px solid var(--logo-color);
+  outline: none;
 }
 
 .submit {
